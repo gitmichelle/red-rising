@@ -1,0 +1,39 @@
+html {
+  box-sizing: border-box; }
+
+*, *::after, *::before {
+  box-sizing: inherit; }
+
+.w3-container, .w3-container .w3-content .mySlides, .w3-container .w3-display-container {
+  margin: 0;
+  padding: 0; }
+
+.w3-container {
+  padding: 0 !important;
+  overflow: hidden;
+  max-height: 28.125em; }
+  .w3-container img {
+    width: 100%; }
+  .w3-container .w3-content {
+    display: block;
+    max-width: 100vw;
+    position: relative;
+    background-color: black;
+    overflow: hidden; }
+    .w3-container .w3-content .mySlides {
+      display: none; }
+    .w3-container .w3-content .w3-center {
+      width: 100%;
+      position: absolute;
+      top: 350px; }
+  .w3-container .w3-display-container {
+    max-width: 100vw;
+    overflow: hidden; }
+  .w3-container .w3-left, .w3-container .w3-right, .w3-container .w3-badge {
+    cursor: pointer; }
+  .w3-container .w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0; }
+
+/*# sourceMappingURL=app.css.map */
