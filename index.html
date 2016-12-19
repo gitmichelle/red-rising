@@ -4,54 +4,67 @@
     <meta charset="utf-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css" type="text/css">
-    <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
-    <script type="text/javascript" src="js/jquery-3.1.1.js"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/modernizr-custom.js"></script>
     <title></title>
   </head>
   <body>
-    <div class="w3-container">
-      <div class="w3-content w3-display-container">
-        <img class="mySlides" src="img/redrising.jpg">
-        <img class="mySlides" src="img/goldenson.jpg">
-        <img class="mySlides" src="img/morningstar.jpg">
-        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
-          <div class="w3-left w3-padding-left w3-hover-text-amber" onclick="plusDivs(-1)">&#10094;</div>
-          <div class="w3-right w3-padding-right w3-hover-text-amber" onclick="plusDivs(1)">&#10095;</div>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-          <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
-        </div>
-      </div>
-    </div>
-    <script type="text/javascript">
-      var slideIndex = 1;
-      showDivs(slideIndex);
+    <section class="cd-hero">
+  		<ul class="cd-hero-slider autoplay">
+  			<li class="selected">
+          <div class="cd-half-width">
+  					<h2>Red Rising</h2>
+  					<p>“[A] spectacular adventure . . . one heart-pounding ride . . . Pierce Brown’s dizzyingly good debut novel evokes The Hunger Games, Lord of the Flies, and Ender’s Game. . . . [Red Rising] has everything it needs to become meteoric.”</p><p>—Entertainment Weekly</p>
+  					<a href="#0" class="cd-btn secondary">Learn More</a>
+  				</div> <!-- .cd-half-width -->
 
-      function plusDivs(n) {
-        showDivs(slideIndex += n);
-      }
+  				<div class="cd-half-width cd-img-container">
+  					<img src="img/redrising.jpg" alt="Red Rising">
+  				</div> <!-- .cd-half-width.cd-img-container -->
+  			</li>
 
-      function currentDiv(n) {
-        showDivs(slideIndex = n);
-      }
+        <li>
+  				<div class="cd-half-width cd-img-container">
+  					<img src="img/goldenson.jpg" alt="Golden Son">
+  				</div> <!-- .cd-half-width.cd-img-container -->
 
-      function showDivs(n) {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        if (n > x.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = x.length}
-        for (i = 0; i < x.length; i++) {
-           x[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-           dots[i].className = dots[i].className.replace(" w3-white", "");
-        }
-        x[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " w3-white";
-      }
-    </script>
+  				<div class="cd-half-width">
+  					<h2>Golden Son</h2>
+  					<p>“Brown writes layered, flawed characters . . . but plot is his most breathtaking strength. . . . Every action seems to flow into the next.”</p><p>—NPR</p>
+  					<a href="#0" class="cd-btn secondary">Learn More</a>
+  				</div> <!-- .cd-half-width -->
+  			</li>
+        <li>
+          <div class="cd-half-width">
+  					<h2>Morning Star</h2>
+  					<p>“Multilayered and seething with characters who exist in a shadow world between history and myth, much as in Frank Herbert’s Dune . . . an ambitious and satisfying conclusion to a monumental saga.”</p><p>—Kirkus Reviews</p>
+  					<a href="#0" class="cd-btn secondary">Learn More</a>
+  				</div> <!-- .cd-half-width -->
+
+  				<div class="cd-half-width cd-img-container">
+  					<img src="img/morningstar.jpg" alt="Morning Star">
+  				</div> <!-- .cd-half-width.cd-img-container -->
+  			</li>
+      </ul>
+      <!-- <div class="cd-slider-nav">
+  			<nav>
+  				<span class="cd-marker item-1"></span>
+
+  				<ul>
+  					<li class="selected"><a href="#0">Intro</a></li>
+  					<li><a href="#0">Tech 1</a></li>
+  					<li><a href="#0">Tech 2</a></li>
+  					<li><a href="#0">Video</a></li>
+  					<li><a href="#0">Image</a></li>
+  				</ul>
+  			</nav>
+  		</div>
+    </section> <!-- .cd-hero -->
+
+
+
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>
