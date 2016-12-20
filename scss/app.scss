@@ -9,26 +9,27 @@
 body {
 	font: {
 		size: 1.6rem;
-		family: $primary-font; // variables inside partials > _variables.scss
+		family: $primary-font;
 	}
-	color: $color-1;
-	background-color: darken($color-3, 5%);
 }
 
 a {
 	color: $color-2;
 	text-decoration: none;
+  font: {
+		size: 1.1rem;
+		family: $secondary-font;
+	}
 }
 
 img {
 	max-width: 100%;
 }
+//Header
 
-/* --------------------------------
 
-Main Components
 
--------------------------------- */
+//Main Components
 
 .cd-header {
 	position: absolute;
@@ -557,21 +558,6 @@ Slider navigation
 		background-position: -48px -24px;
 	}
 
-	li:nth-of-type(4) a::before {
-		background-position: -72px 0;
-	}
-
-	li.selected:nth-of-type(4) a::before {
-		background-position: -72px -24px;
-	}
-
-	li:nth-of-type(5) a::before {
-		background-position: -96px 0;
-	}
-
-	li.selected:nth-of-type(5) a::before {
-		background-position: -96px -24px;
-	}
 
 	@include MQ(M) {
 		height: 80px;
