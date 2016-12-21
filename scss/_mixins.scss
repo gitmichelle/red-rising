@@ -25,14 +25,17 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-@mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; }
+@mixin MQ($brkpoint) {
+  @if $brkpoint == S {
+   @media only screen and (max-width: $M){
+     @content; }
   }
-  @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; }
+  @else if $brkpoint == M {
+   @media only screen and (min-width: $M + 1) and (max-width: $L){
+     @content; }
   }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; }
+  @else if $brkpoint == L {
+   @media only screen and (min-width: $L + 1) {
+     @content; }
   }
 }

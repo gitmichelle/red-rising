@@ -130,4 +130,9 @@ jQuery(document).ready(function($){
 	    });
 	    return this;
 	};
+
+	$(".dropdown-button").click(function(event){
+  event.preventDefault();
+		$(".dropdown-container").toggle();
+	});
 });
