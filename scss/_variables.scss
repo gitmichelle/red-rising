@@ -1,13 +1,13 @@
 // colors
 
 $color-1: #111c35; //
-$color-2: #ff3737; //
+$color-2: #b80000; //
 $color-3: #ffffff; // White
-$color-4: -webkit-linear-gradient(top, black, #001d4c 40%);
+$color-4: -webkit-linear-gradient(top, black, #001d4c 30%, black);
 
 // fonts
 
-$primary-font: 'Cinzel', serif;
+$primary-font: 'Cinzel Decorative', serif;
 $secondary-font:'Raleway', sans-serif;
 
 // header height
@@ -19,7 +19,7 @@ $header-M: 70px;
 
 $intro-height-S: 250px;
 $intro-height-M: 450px;
-$intro-height-L: 500px;
+$intro-height-L: 625px;
 
 // breakpoints
 
