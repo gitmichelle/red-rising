@@ -455,19 +455,25 @@ About section
 .about {
   margin: 0;
   padding: 0;
-  height: 500px;
+  height: em(500px);
   width: 100vw;
   background-color: black;
-  position: relative;
   .pierce-img {
-    height: 500px;
-    background-image: url("../img/pierce.jpg");
+    position: relative;
+    height: 100%;
+    width: 100%;
+    // background-image: url("../img/pierce.jpg");
     background-position: left;
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    border: 1px solid green;
+    img {
+      height: 100%;
+      width: 100%;
+    }
     .about-box{
-      height: 400px;
-      width: 400px;
+      height: em(400px);
+      width: em(400px);
       background: transparent;
       position: absolute;
       top: 40px;

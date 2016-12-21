@@ -441,19 +441,23 @@ About section
 .about {
   margin: 0;
   padding: 0;
-  height: 500px;
+  height: 31.25em;
   width: 100vw;
-  background-color: black;
-  position: relative; }
+  background-color: black; }
   .about .pierce-img {
-    height: 500px;
-    background-image: url("../img/pierce.jpg");
+    position: relative;
+    height: 100%;
+    width: 100%;
     background-position: left;
     background-repeat: no-repeat;
-    background-size: auto; }
+    background-size: cover;
+    border: 1px solid green; }
+    .about .pierce-img img {
+      height: 100%;
+      width: 100%; }
     .about .pierce-img .about-box {
-      height: 400px;
-      width: 400px;
+      height: 25em;
+      width: 25em;
       background: transparent;
       position: absolute;
       top: 40px;
