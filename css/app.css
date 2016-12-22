@@ -117,6 +117,11 @@ Header
   background: transparent;
   justify-content: flex-start;
   flex-direction: column; }
+  @media only screen and (max-width: 767px) {
+    .nav {
+      background: black;
+      position: static;
+      padding: 0.625em 0.625em; } }
   .nav .top-nav {
     display: flex;
     align-items: flex-start;
@@ -261,8 +266,7 @@ Single slide style
   -moz-transform: translateX(-50%) translateY(-50%);
   -ms-transform: translateX(-50%) translateY(-50%);
   -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  height: 15.625em; }
+  transform: translateX(-50%) translateY(-50%); }
 .cd-hero-slider h2, .cd-hero-slider p {
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   line-height: 1.2;
@@ -303,30 +307,37 @@ Single slide style
     .cd-hero-slider .cd-btn {
       display: none; } }
 @media only screen and (max-width: 767px) {
+  .cd-hero-slider .cd-hero {
+    height: 70em;
+    width: 100vw;
+    position: fixed; }
   .cd-hero-slider .cd-half-width {
     display: none; }
+  .cd-hero-slider .cd-hero-slider {
+    margin-top: 10px;
+    height: 100%;
+    width: 100%; }
   .cd-hero-slider li:first-of-type {
     background-image: url("../img/redrising-sm.jpg");
-    background-size: contain; }
+    background-size: cover; }
   .cd-hero-slider li:nth-of-type(2) {
     background-image: url("../img/goldenson-sm.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: cover; }
   .cd-hero-slider li:last-of-type {
     background-image: url("../img/morningstar-sm.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     overflow: hidden; } }
 @media only screen and (min-width: 768px) and (max-width: 1169px) {
   .cd-hero-slider li:nth-of-type(3) h2 {
-    font-size: 3rem; }
+    font-size: 1.2em; }
   .cd-hero-slider li:nth-of-type(2) h2 {
-    font-size: 3rem;
-    margin-top: 50px; }
+    margin-top: 38px; }
   .cd-hero-slider .cd-half-width {
-    padding-top: 10px;
+    padding-top: 3.125em;
     width: 45%; }
     .cd-hero-slider .cd-half-width:nth-of-type(3) {
       font-size: 50px; }
@@ -337,10 +348,13 @@ Single slide style
       left: auto; }
   .cd-hero-slider .cd-img-container {
     display: block; }
+    .cd-hero-slider .cd-img-container img {
+      height: 12.5em;
+      margin-top: 30px; }
   .cd-hero-slider h2, .cd-hero-slider p {
     max-width: 520px; }
   .cd-hero-slider h2 {
-    font-size: 2em;
+    font-size: 1.3em;
     font-weight: 300; }
   .cd-hero-slider p {
     font-size: 0.7em; }
@@ -441,13 +455,14 @@ About section
 .about {
   margin: 0;
   padding: 0;
-  height: 31.25em;
+  height: 18.75em;
   width: 100vw;
   background-color: black; }
   .about .pierce-img {
     position: relative;
     height: 100%;
     width: 100%;
+    background-image: url("../img/pierce.jpg");
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
@@ -456,8 +471,8 @@ About section
       height: 100%;
       width: 100%; }
     .about .pierce-img .about-box {
-      height: 25em;
-      width: 25em;
+      height: 18.75em;
+      width: 18.75em;
       background: transparent;
       position: absolute;
       top: 40px;
