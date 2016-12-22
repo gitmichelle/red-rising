@@ -26,8 +26,12 @@
 }
 
 @mixin MQ($brkpoint) {
-  @if $brkpoint == S {
-   @media only screen and (max-width: $M){
+  @if $brkpoint == XS {
+   @media only screen and (max-width: $S){
+     @content; }
+  }
+  @else if $brkpoint == S {
+   @media only screen and (min-width: $S + 1) and (max-width: $M){
      @content; }
   }
   @else if $brkpoint == M {
