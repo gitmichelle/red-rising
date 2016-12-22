@@ -35,7 +35,7 @@ Header
 	left: 0;
 	width: 100vw;
   display: flex;
-  padding: em(20px) em(20px);
+  padding: em(30px) em(30px);
   background: transparent;
   justify-content: flex-start;
   flex-direction: column;
@@ -51,6 +51,12 @@ Header
 		padding: em(10px) em(10px);
 		border-bottom: 1px solid white;
 	}
+	@include MQ(M) {
+		padding: em(20px) em(20px);
+	}
+	@include MQ(XL) {
+		padding: em(40px) em(40px);
+	}
   .top-nav {
     display: flex;
     align-items: flex-start;
@@ -62,6 +68,10 @@ Header
       color: #e9f1ff;
       font-size: 2rem;
       font-weight: 600;
+			@include MQ(XL) {
+				font-size: 2.5rem;
+				margin-left: em(30px);
+			}
     }
     .right-nav {
       display: flex;
@@ -74,17 +84,32 @@ Header
       @include MQ(M) {
         display: none;
       }
+			@include MQ(XL) {
+				a {
+					font-size: 25px;
+				}
+			}
     }
     li {
       margin: 0 em(10px);
+			@include MQ(XL) {
+				margin: 0 em(12px);
+				&:last-of-type {
+					margin-right: em(70px);
+				}
+			}
     }
     .dropdown {
       margin-top: em(-2px);
       cursor: pointer;
       img {
         width: 55px;
+				margin-right: 40px;
       }
       @include MQ(L) {
+        display: none;
+      }
+			@include MQ(XL) {
         display: none;
       }
     }
@@ -189,16 +214,36 @@ Single slide style
 
   li:first-of-type {
     background-image: url("../img/bg-red.jpg");
+		h2 {
+			@include MQ(XL) {
+				font-size: 5.5rem;
+			}
+  	}
   }
 
   li:nth-of-type(2) {
     background-image: url("../img/bg-golden.jpg");
+		h2 {
+			@include MQ(XL) {
+				font-size: 5.5rem;
+			}
+		}
+		img {
+			@include MQ(XL) {
+				margin-left: 100px;
+				padding-bottom: 150px;
+			}
+  	}
   }
 
 	li:nth-of-type(3) {
     background-image: url("../img/bg-morning.jpg");
     h2 {
   		font-size: 3.5rem;
+			@include MQ(XL) {
+				font-size: 5.5rem;
+				margin-top: 50px;
+			}
   	}
 	}
 
@@ -213,6 +258,9 @@ Single slide style
 		text-align: center;
 		@include backface-visibility(hidden);
 		@include transform(translateZ(0));
+		@include MQ(XL) {
+			padding-top: em(100px);
+		}
 	}
 
 	.cd-img-container {
@@ -220,6 +268,7 @@ Single slide style
 		img {
 			position: absolute;
 			@include center;
+			margin-top: 40px;
 		}
 	}
 
@@ -232,12 +281,18 @@ Single slide style
 		max-width: 400px;
     text-shadow: 1px 1px grey;
     text-rendering: optimizeLegibility;
-
+		@include MQ(XL) {
+			padding: 0;
+		}
 	}
 
 	h2 {
 		font-size: 1.8rem;
     font-weight: 700;
+		@include MQ(XL) {
+			padding: 0;
+			font-size: 5rem;
+		}
 	}
 
 	p {
@@ -245,6 +300,10 @@ Single slide style
 		line-height: 1.4;
     font-family: $secondary-font;
     font-weight: 800;
+		@include MQ(XL) {
+			padding: 0;
+			font-size: 2.5rem;
+		}
 	}
 
 	.cd-btn {
@@ -387,7 +446,7 @@ Single slide style
     }
 
 		.cd-half-width {
-			padding-top: em(50px);
+			padding-top: em(55px);
 			width: 45%;
 
       &:nth-of-type(3){
@@ -442,7 +501,7 @@ Single slide style
 
     .cd-half-width {
       padding-top: 120px;
-      width: 45%;
+      width: 50%;
 
       &:first-of-type {
         left: 5%;
@@ -472,7 +531,58 @@ Single slide style
       font-size: 1.4rem;
     }
   }
+
+
+	@include MQ(XL) {
+
+		li:nth-of-type(2) {
+			h2 {
+				margin-top: 200px;
+			}
+		}
+
+		.cd-half-width {
+			width: 50%;
+
+			&:first-of-type {
+				left: 5%;
+				margin-top: 80px;
+			}
+
+			&:nth-of-type(2) {
+				right: 10%;
+				left: auto;
+			}
+
+		}
+
+		.cd-img-container {
+			height: 600px;
+			width: 450px;
+			img {
+				margin-top: 250px;
+				width: 100%;
+			}
+
+		}
+
+		h2, p {
+			max-width: 1100px;
+			padding: 0;
+		}
+
+		h2 {
+			padding-top: 10px;
+			font-size: 2.4em;
+			font-weight: 300;
+		}
+
+		.cd-btn {
+			font-size: 1.4rem;
+		}
+	}
 }
+
 /* --------------------------------
 
 Single slide animation
@@ -556,6 +666,31 @@ About section
 	height: em(300px);
 	width: 100vw;
 
+	.pierce-img-xl {
+		height: 100%;
+		width: 60%;
+		background-image: url("../img/pierce.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: cover;
+		@include MQ(S) {
+			display: none;
+		}
+		@include MQ(XS) {
+			display: none;
+		}
+		@include MQ(M) {
+			display: none;
+		}
+		@include MQ(L) {
+			display: none;
+		}
+	}
+
+	@include MQ(XL) {
+		height: 625px;
+	}
+
 	@include MQ(XS) {
 		height: 275px;
 		border-bottom: 2px solid white;
@@ -599,6 +734,12 @@ About section
 				top: 50px;
 				right: 30px;
 			}
+			@include MQ(XL){
+				height: 100%;
+				width: 35%;
+				top: 50px;
+				right: 30px;
+			}
       h2 {
         font-family: $secondary-font;
         font-size: 1.5rem;
@@ -606,6 +747,9 @@ About section
         text-align: center;
         margin-bottom: em(10px);
         font-weight: bold;
+				@include MQ (XL) {
+					font-size: 2.5rem;
+				}
 				@include MQ (M) {
 					font-size: 1.8rem;
 				}
@@ -638,6 +782,9 @@ About section
 				@include MQ (L) {
 					display: none;
 				}
+				@include MQ (XL) {
+					display: none;
+				}
 			}
       p {
         font-family: $secondary-font;
@@ -646,6 +793,9 @@ About section
         line-height: 1.3;
 				@include MQ(M) {
 					font-size: 1rem;
+				}
+				@include MQ(XL) {
+					font-size: 1.7rem;
 				}
         &:first-of-type {
           margin-bottom: em(20px);
@@ -686,6 +836,11 @@ About section
 					&:first-of-type {
 	          margin-left: 10px;
 	        }
+				}
+				@include MQ(XL) {
+					height: 15%;
+					width: 15%;
+
 				}
       }
     }
