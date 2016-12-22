@@ -769,21 +769,21 @@ About section
   .world-section .pyramid {
     position: relative; }
     .world-section .pyramid .level-one {
-      height: 150px;
-      display: flex;
-      justify-content: center;
-      align-content: center;
-      align-items: center; }
+      height: 150px; }
       .world-section .pyramid .level-one .gold {
-        text-align: center;
         border-bottom: 150px solid white;
         border-left: 75px solid transparent;
         border-right: 75px solid transparent;
         height: 0;
-        width: 0px; }
+        width: 0px;
+        margin-right: auto;
+        margin-left: auto;
+        text-align: center; }
         .world-section .pyramid .level-one .gold img {
           position: absolute;
-          left: 320px; }
+          left: 365px;
+          top: 40px;
+          width: 30%; }
     .world-section .pyramid .level-two {
       height: 150px;
       display: flex;

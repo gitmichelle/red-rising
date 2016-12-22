@@ -873,20 +873,21 @@ About section
 		position: relative;
 		.level-one {
 			height: 150px;
-			display: flex;
-			justify-content: center;
-			align-content: center;
-			align-items: center;
 			.gold {
-			text-align: center;
 			border-bottom: 150px solid white;
 	    border-left: 75px solid transparent;
 	    border-right: 75px solid transparent;
 	    height: 0;
 	    width: 0px;
+			margin-right: auto;
+			margin-left: auto;
+			text-align: center;
+
 				img {
 					position: absolute;
-					left: 320px;
+					left: 365px;
+					top: 40px;
+					width: 30%;
 				}
 			}
 		}
