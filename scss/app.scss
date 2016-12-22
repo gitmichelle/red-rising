@@ -22,9 +22,9 @@ a {
 	}
 }
 
-img {
-	max-width: 100%;
-}
+// img {
+// 	max-width: 100%;
+// }
 /* --------------------------------
 Header
 -------------------------------- */
@@ -869,8 +869,18 @@ About section
 	background-repeat: no-repeat;
 	background-size: cover;
 	overflow: hidden;
+	display: flex;
+	justify-content: center;
 	.pyramid {
 		position: relative;
+		height: 950px;
+		max-width: 1080px;
+		min-width: 1080px;
+		border: 1px solid white;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
 		.level-one {
 			height: 150px;
 			.gold {
@@ -885,8 +895,8 @@ About section
 
 				img {
 					position: absolute;
-					left: 365px;
-					top: 40px;
+					left: 382.5px;
+					top: 50px;
 					width: 30%;
 				}
 			}
@@ -906,7 +916,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: absolute;
-				left: 230px;
+				left: 380px;
+				img {
+					position: absolute;
+					left: -50px;
+					top: 68px;
+					width: 100px;
+				}
 			}
 			.white {
 				border-top: 150px solid white;
@@ -916,6 +932,12 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: relative;
+				img {
+					position: absolute;
+					left: -22px;
+					bottom: 30px;
+					width: 50px;
+				}
 			}
 			.copper {
 				border-bottom: 150px solid white;
@@ -925,7 +947,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: absolute;
-				right: 230px;
+				right: 380px;
+				img {
+					position: absolute;
+					left: -40px;
+					top: 65px;
+					width: 80px;
+				}
 			}
 		}
 		.level-three {
@@ -943,7 +971,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: absolute;
-				left: 147px;
+				left: 295px;
+				img {
+					position: absolute;
+					left: -38px;
+					top: 70px;
+					width: 80px;
+				}
 			}
 			.yellow {
 				border-top: 150px solid white;
@@ -953,7 +987,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: absolute;
-				left: 230px;
+				left: 380px;
+				img {
+					position: absolute;
+					left: -50px;
+					bottom: 50px;
+					width: 100px;
+				}
 			}
 			.green {
 				border-bottom: 150px solid white;
@@ -963,6 +1003,12 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: relative;
+				img {
+					position: absolute;
+					left: -52.5px;
+					top: 35px;
+					width: 105px;
+				}
 			}
 			.violet {
 				border-top: 150px solid white;
@@ -972,7 +1018,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: absolute;
-				right: 230px;
+				right: 380px;
+				img {
+					position: absolute;
+					left: -55px;
+					bottom: 40px;
+					width: 115px;
+				}
 			}
 			.orange {
 				border-bottom: 150px solid white;
@@ -982,7 +1034,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: absolute;
-				right: 147px;
+				right: 295px;
+				img {
+					position: absolute;
+					left: -40px;
+					top: 60px;
+					width: 85px;
+				}
 			}
 		}
 		.level-four {
@@ -992,15 +1050,18 @@ About section
 			align-content: center;
 			align-items: center;
 			border-top: 20px solid black;
+			margin-top: 12.5px;
 
 			.gray {
 				@include box-sizing(content-box);
-			  width: 500px;
+			  width: 490px;
 			  height: 0;
 			  border: 75px solid transparent;
 			  border-top: 0 solid;
 			  border-bottom: 150px solid white;
-				margin-top: 25px;
+				img {
+					width: 25%;
+				}
 			}
 		}
 		.level-five {
@@ -1009,15 +1070,18 @@ About section
 			justify-content: center;
 			align-content: center;
 			align-items: center;
-			border-top: 20px solid black;
-			padding-top: 50px;
+			border-top: 13px solid black;
 			.brown {
-				width: 250px;
+				width: 232.5px;
 				height: 150px;
 				-webkit-transform: skew(-27deg);
 				background: white;
 				position: absolute;
-				left: 160px;
+				left: 185px;
+				img {
+					margin-top: 30px;
+					width: 50%;
+				}
 			}
 			.obsidian {
 				@include box-sizing(content-box);
@@ -1027,14 +1091,20 @@ About section
 			  border-top: 0 solid;
 			  border-bottom: 150px solid white;
 				position: relative;
+				img {
+					margin-top: 30px;
+				}
 			}
 			.pink {
-				width: 250px;
+				width: 232.5px;
 				height: 150px;
 				-webkit-transform: skew(27deg);
 				background: white;
 				position: absolute;
-				right: 160px;
+				right: 185px;
+				img {
+					margin-top: 20px;
+				}
 			}
 		}
 		.level-six {
@@ -1043,16 +1113,18 @@ About section
 			justify-content: center;
 			align-content: center;
 			align-items: center;
-			border-top: 20px solid black;
-			padding-top: 50px;
+			border-top: 10px solid black;
 			.red {
 				@include box-sizing(content-box);
-			  width: 850px;
+			  width: 790px;
 			  height: 0;
 			  border: 75px solid transparent;
 			  border-top: 0 solid;
 			  border-bottom: 150px solid white;
-				margin-top: 25px;
+				margin-top: 20px;
+				img {
+					width: 12%;
+				}
 			}
 		}
 	}
