@@ -770,7 +770,6 @@ About section
     height: 950px;
     max-width: 1080px;
     min-width: 1080px;
-    border: 1px solid white;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -785,7 +784,12 @@ About section
         width: 0px;
         margin-right: auto;
         margin-left: auto;
-        text-align: center; }
+        text-align: center;
+        transition: transform 1s; }
+        .world-section .pyramid .level-one .gold:hover {
+          transform: scale(2); }
+          .world-section .pyramid .level-one .gold:hover img {
+            display: none; }
         .world-section .pyramid .level-one .gold img {
           position: absolute;
           left: 382.5px;
@@ -806,7 +810,12 @@ About section
         width: 0px;
         padding: 0;
         position: absolute;
-        left: 380px; }
+        left: 380px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-two .silver:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-two .silver:hover img {
+            display: none; }
         .world-section .pyramid .level-two .silver img {
           position: absolute;
           left: -50px;
@@ -819,7 +828,12 @@ About section
         height: 0;
         width: 0px;
         padding: 0;
-        position: relative; }
+        position: relative;
+        transition: transform 1s; }
+        .world-section .pyramid .level-two .white:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-two .white:hover img {
+            display: none; }
         .world-section .pyramid .level-two .white img {
           position: absolute;
           left: -22px;
@@ -833,7 +847,12 @@ About section
         width: 0px;
         padding: 0;
         position: absolute;
-        right: 380px; }
+        right: 380px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-two .copper:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-two .copper:hover img {
+            display: none; }
         .world-section .pyramid .level-two .copper img {
           position: absolute;
           left: -40px;
@@ -854,7 +873,12 @@ About section
         width: 0px;
         padding: 0;
         position: absolute;
-        left: 295px; }
+        left: 295px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-three .blue:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-three .blue:hover img {
+            display: none; }
         .world-section .pyramid .level-three .blue img {
           position: absolute;
           left: -38px;
@@ -868,7 +892,12 @@ About section
         width: 0px;
         padding: 0;
         position: absolute;
-        left: 380px; }
+        left: 380px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-three .yellow:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-three .yellow:hover img {
+            display: none; }
         .world-section .pyramid .level-three .yellow img {
           position: absolute;
           left: -50px;
@@ -881,7 +910,12 @@ About section
         height: 0;
         width: 0px;
         padding: 0;
-        position: relative; }
+        position: relative;
+        transition: transform 1s; }
+        .world-section .pyramid .level-three .green:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-three .green:hover img {
+            display: none; }
         .world-section .pyramid .level-three .green img {
           position: absolute;
           left: -52.5px;
@@ -895,7 +929,12 @@ About section
         width: 0px;
         padding: 0;
         position: absolute;
-        right: 380px; }
+        right: 380px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-three .violet:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-three .violet:hover img {
+            display: none; }
         .world-section .pyramid .level-three .violet img {
           position: absolute;
           left: -55px;
@@ -909,7 +948,12 @@ About section
         width: 0px;
         padding: 0;
         position: absolute;
-        right: 295px; }
+        right: 295px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-three .orange:hover {
+          transform: scale(1.8); }
+          .world-section .pyramid .level-three .orange:hover img {
+            display: none; }
         .world-section .pyramid .level-three .orange img {
           position: absolute;
           left: -40px;
@@ -931,7 +975,12 @@ About section
         height: 0;
         border: 75px solid transparent;
         border-top: 0 solid;
-        border-bottom: 150px solid white; }
+        border-bottom: 150px solid white;
+        transition: transform 1s; }
+        .world-section .pyramid .level-four .gray:hover {
+          transform: scale(1.1); }
+          .world-section .pyramid .level-four .gray:hover img {
+            display: none; }
         .world-section .pyramid .level-four .gray img {
           width: 25%; }
     .world-section .pyramid .level-five {
@@ -947,7 +996,12 @@ About section
         -webkit-transform: skew(-27deg);
         background: white;
         position: absolute;
-        left: 185px; }
+        left: 185px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-five .brown:hover {
+          transform: scale(1.5); }
+          .world-section .pyramid .level-five .brown:hover img {
+            display: none; }
         .world-section .pyramid .level-five .brown img {
           margin-top: 30px;
           width: 50%; }
@@ -960,7 +1014,12 @@ About section
         border: 75px solid transparent;
         border-top: 0 solid;
         border-bottom: 150px solid white;
-        position: relative; }
+        position: relative;
+        transition: transform 1s; }
+        .world-section .pyramid .level-five .obsidian:hover {
+          transform: scale(1.5); }
+          .world-section .pyramid .level-five .obsidian:hover img {
+            display: none; }
         .world-section .pyramid .level-five .obsidian img {
           margin-top: 30px; }
       .world-section .pyramid .level-five .pink {
@@ -969,7 +1028,12 @@ About section
         -webkit-transform: skew(27deg);
         background: white;
         position: absolute;
-        right: 185px; }
+        right: 185px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-five .pink:hover {
+          transform: scale(1.5); }
+          .world-section .pyramid .level-five .pink:hover img {
+            display: none; }
         .world-section .pyramid .level-five .pink img {
           margin-top: 20px; }
     .world-section .pyramid .level-six {
@@ -988,7 +1052,13 @@ About section
         border: 75px solid transparent;
         border-top: 0 solid;
         border-bottom: 150px solid white;
-        margin-top: 20px; }
+        margin-top: 20px;
+        transition: transform 1s; }
+        .world-section .pyramid .level-six .red:hover {
+          transform: scale(1.1); }
+          .world-section .pyramid .level-six .red:hover img {
+            display: none;
+            overflow: hidden; }
         .world-section .pyramid .level-six .red img {
           width: 12%; }
 

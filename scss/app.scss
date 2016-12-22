@@ -876,7 +876,6 @@ About section
 		height: 950px;
 		max-width: 1080px;
 		min-width: 1080px;
-		border: 1px solid white;
 		text-align: center;
 		display: flex;
 		flex-direction: column;
@@ -892,7 +891,13 @@ About section
 			margin-right: auto;
 			margin-left: auto;
 			text-align: center;
-
+			transition: transform 1s;
+				&:hover {
+					transform: scale(2);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: 382.5px;
@@ -917,6 +922,13 @@ About section
 				padding: 0;
 				position: absolute;
 				left: 380px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -50px;
@@ -932,6 +944,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: relative;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -22px;
@@ -948,6 +967,13 @@ About section
 				padding: 0;
 				position: absolute;
 				right: 380px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -40px;
@@ -972,6 +998,13 @@ About section
 				padding: 0;
 				position: absolute;
 				left: 295px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -38px;
@@ -988,6 +1021,13 @@ About section
 				padding: 0;
 				position: absolute;
 				left: 380px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -50px;
@@ -1003,6 +1043,13 @@ About section
 		    width: 0px;
 				padding: 0;
 				position: relative;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -52.5px;
@@ -1019,6 +1066,13 @@ About section
 				padding: 0;
 				position: absolute;
 				right: 380px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -55px;
@@ -1035,6 +1089,13 @@ About section
 				padding: 0;
 				position: absolute;
 				right: 295px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.8);
+					img {
+						display: none;
+					}
+				}
 				img {
 					position: absolute;
 					left: -40px;
@@ -1059,6 +1120,13 @@ About section
 			  border: 75px solid transparent;
 			  border-top: 0 solid;
 			  border-bottom: 150px solid white;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.1);
+					img {
+						display: none;
+					}
+				}
 				img {
 					width: 25%;
 				}
@@ -1078,6 +1146,13 @@ About section
 				background: white;
 				position: absolute;
 				left: 185px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.5);
+					img {
+						display: none;
+					}
+				}
 				img {
 					margin-top: 30px;
 					width: 50%;
@@ -1091,6 +1166,13 @@ About section
 			  border-top: 0 solid;
 			  border-bottom: 150px solid white;
 				position: relative;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.5);
+					img {
+						display: none;
+					}
+				}
 				img {
 					margin-top: 30px;
 				}
@@ -1102,6 +1184,13 @@ About section
 				background: white;
 				position: absolute;
 				right: 185px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.5);
+					img {
+						display: none;
+					}
+				}
 				img {
 					margin-top: 20px;
 				}
@@ -1122,6 +1211,14 @@ About section
 			  border-top: 0 solid;
 			  border-bottom: 150px solid white;
 				margin-top: 20px;
+				transition: transform 1s;
+				&:hover {
+					transform: scale(1.1);
+					img {
+						display: none;
+						overflow: hidden;
+					}
+				}
 				img {
 					width: 12%;
 				}
