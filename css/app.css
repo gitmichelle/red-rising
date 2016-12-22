@@ -759,4 +759,181 @@ About section
       height: 100px;
       border-bottom: 2px solid white; } }
 
+.world-section {
+  height: 56.25em;
+  background-image: url("../img/space.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden; }
+  .world-section .pyramid {
+    position: relative; }
+    .world-section .pyramid .level-one {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center; }
+      .world-section .pyramid .level-one .gold {
+        text-align: center;
+        border-bottom: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px; }
+        .world-section .pyramid .level-one .gold img {
+          position: absolute;
+          left: 320px; }
+    .world-section .pyramid .level-two {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-top: 15px solid black; }
+      .world-section .pyramid .level-two .silver {
+        border-bottom: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: absolute;
+        left: 230px; }
+      .world-section .pyramid .level-two .white {
+        border-top: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: relative; }
+      .world-section .pyramid .level-two .copper {
+        border-bottom: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: absolute;
+        right: 230px; }
+    .world-section .pyramid .level-three {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-top: 30px solid black; }
+      .world-section .pyramid .level-three .blue {
+        border-bottom: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: absolute;
+        left: 147px; }
+      .world-section .pyramid .level-three .yellow {
+        border-top: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: absolute;
+        left: 230px; }
+      .world-section .pyramid .level-three .green {
+        border-bottom: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: relative; }
+      .world-section .pyramid .level-three .violet {
+        border-top: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: absolute;
+        right: 230px; }
+      .world-section .pyramid .level-three .orange {
+        border-bottom: 150px solid white;
+        border-left: 75px solid transparent;
+        border-right: 75px solid transparent;
+        height: 0;
+        width: 0px;
+        padding: 0;
+        position: absolute;
+        right: 147px; }
+    .world-section .pyramid .level-four {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-top: 20px solid black; }
+      .world-section .pyramid .level-four .gray {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 500px;
+        height: 0;
+        border: 75px solid transparent;
+        border-top: 0 solid;
+        border-bottom: 150px solid white;
+        margin-top: 25px; }
+    .world-section .pyramid .level-five {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-top: 20px solid black;
+      padding-top: 50px; }
+      .world-section .pyramid .level-five .brown {
+        width: 250px;
+        height: 150px;
+        -webkit-transform: skew(-27deg);
+        background: white;
+        position: absolute;
+        left: 160px; }
+      .world-section .pyramid .level-five .obsidian {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 150px;
+        height: 0;
+        border: 75px solid transparent;
+        border-top: 0 solid;
+        border-bottom: 150px solid white;
+        position: relative; }
+      .world-section .pyramid .level-five .pink {
+        width: 250px;
+        height: 150px;
+        -webkit-transform: skew(27deg);
+        background: white;
+        position: absolute;
+        right: 160px; }
+    .world-section .pyramid .level-six {
+      height: 150px;
+      display: flex;
+      justify-content: center;
+      align-content: center;
+      align-items: center;
+      border-top: 20px solid black;
+      padding-top: 50px; }
+      .world-section .pyramid .level-six .red {
+        -webkit-box-sizing: content-box;
+        -moz-box-sizing: content-box;
+        box-sizing: content-box;
+        width: 850px;
+        height: 0;
+        border: 75px solid transparent;
+        border-top: 0 solid;
+        border-bottom: 150px solid white;
+        margin-top: 25px; }
+
 /*# sourceMappingURL=app.css.map */

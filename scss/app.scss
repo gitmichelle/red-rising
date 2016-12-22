@@ -847,9 +847,6 @@ About section
   }
 }
 
-
-
-
 .signup {
   height: 120px;
   width: 100vw;
@@ -862,5 +859,200 @@ About section
 	@include MQ (XS) {
 		height: 100px;
 		border-bottom: 2px solid white;
+	}
+}
+
+.world-section {
+	height: em(900px);
+	background-image: url("../img/space.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	overflow: hidden;
+	.pyramid {
+		position: relative;
+		.level-one {
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			.gold {
+			text-align: center;
+			border-bottom: 150px solid white;
+	    border-left: 75px solid transparent;
+	    border-right: 75px solid transparent;
+	    height: 0;
+	    width: 0px;
+				img {
+					position: absolute;
+					left: 320px;
+				}
+			}
+		}
+		.level-two {
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			border-top: 15px solid black;
+			.silver {
+				border-bottom: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: absolute;
+				left: 230px;
+			}
+			.white {
+				border-top: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: relative;
+			}
+			.copper {
+				border-bottom: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: absolute;
+				right: 230px;
+			}
+		}
+		.level-three {
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			border-top: 30px solid black;
+			.blue {
+				border-bottom: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: absolute;
+				left: 147px;
+			}
+			.yellow {
+				border-top: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: absolute;
+				left: 230px;
+			}
+			.green {
+				border-bottom: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: relative;
+			}
+			.violet {
+				border-top: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: absolute;
+				right: 230px;
+			}
+			.orange {
+				border-bottom: 150px solid white;
+		    border-left: 75px solid transparent;
+		    border-right: 75px solid transparent;
+		    height: 0;
+		    width: 0px;
+				padding: 0;
+				position: absolute;
+				right: 147px;
+			}
+		}
+		.level-four {
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			border-top: 20px solid black;
+
+			.gray {
+				@include box-sizing(content-box);
+			  width: 500px;
+			  height: 0;
+			  border: 75px solid transparent;
+			  border-top: 0 solid;
+			  border-bottom: 150px solid white;
+				margin-top: 25px;
+			}
+		}
+		.level-five {
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			border-top: 20px solid black;
+			padding-top: 50px;
+			.brown {
+				width: 250px;
+				height: 150px;
+				-webkit-transform: skew(-27deg);
+				background: white;
+				position: absolute;
+				left: 160px;
+			}
+			.obsidian {
+				@include box-sizing(content-box);
+			  width: 150px;
+			  height: 0;
+			  border: 75px solid transparent;
+			  border-top: 0 solid;
+			  border-bottom: 150px solid white;
+				position: relative;
+			}
+			.pink {
+				width: 250px;
+				height: 150px;
+				-webkit-transform: skew(27deg);
+				background: white;
+				position: absolute;
+				right: 160px;
+			}
+		}
+		.level-six {
+			height: 150px;
+			display: flex;
+			justify-content: center;
+			align-content: center;
+			align-items: center;
+			border-top: 20px solid black;
+			padding-top: 50px;
+			.red {
+				@include box-sizing(content-box);
+			  width: 850px;
+			  height: 0;
+			  border: 75px solid transparent;
+			  border-top: 0 solid;
+			  border-bottom: 150px solid white;
+				margin-top: 25px;
+			}
+		}
 	}
 }
