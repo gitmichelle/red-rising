@@ -42,4 +42,8 @@
    @media only screen and (min-width: $L + 1) {
      @content; }
   }
+  @else if $brkpoint == XL {
+   @media only screen and (min-width: $XL) {
+     @content; }
+  }
 }
