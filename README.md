@@ -1,8 +1,7 @@
 # Red Rising website redesign
 
 ## CSS Week 5: Independent Capstone Project
-
-#### By **Michelle Llaguno**
+By **Michelle Llaguno**
 
 ## Description
 
