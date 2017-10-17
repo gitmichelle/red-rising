@@ -1,6 +1,6 @@
 # Red Rising website redesign
 
-## CSS Week 5: Independent Capstone Project
+CSS Week 5: Independent Capstone Project
 By **Michelle Llaguno**
 
 ## Description
@@ -9,8 +9,8 @@ _Redesigned the landing page and "world" section of Pierce Brown's author websit
 
 ## Setup/Installation Requirements
 
-* _[Click here] (https://gitmichelle.github.io/red-rising/) to view on gh-pages._
-* _Clone repository `https://github.com/gitmichelle/red-rising.git`
+* _[Click here](https://gitmichelle.github.io/red-rising/) to view on gh-pages._
+* Clone repository `https://github.com/gitmichelle/red-rising.git`
 
 
 ## Technologies Used
