@@ -2,7 +2,7 @@
 
 CSS Week 5: Independent Capstone Project
 
-By **Michelle Llaguno**
+by Michelle Llaguno
 
 ## Description
 
